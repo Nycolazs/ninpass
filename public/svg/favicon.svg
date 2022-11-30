@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 658.9 474.27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ff4d43;
+        stroke-miterlimit: 10;
+        stroke-width: 30px;
+      }
+
+      .cls-2 {
+        fill: #ff4d43;
+      }
+    </style>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <g>
+      <path class="cls-2" d="M331.1,207.68v79.92h-65.86v-91.26c0-21.87-16.05-30.24-30.72-30.24s-30.72,8.37-30.72,30.24v91.26h-65.86V142.34h65.86v15.93c14.11-14.85,34.59-21.87,54.79-21.87,35.97,0,72.5,21.6,72.5,71.28Z"/>
+      <path class="cls-2" d="M441.53,136.4c48.43,0,79.42,15.31,79.42,46.11s-30.99,46.11-79.42,46.11h-21.31v58.97h-47.65V136.4h68.96Zm28.67,41.01c0-12.47-9.49-24-28.67-24h-21.31v58.21h21.31c19.18,0,28.67-11.53,28.67-24v-10.21Z"/>
+    </g>
+    <path class="cls-1" d="M234.52,409h-22.52c-108.8,0-197-88.2-197-197h0c0-108.8,88.2-197,197-197h234.9c108.8,0,197,88.2,197,197h0c0,108.8-88.2,197-197,197h-26.67"/>
+    <g>
+      <rect class="cls-2" x="264.24" y="394" width="130.41" height="30.12"/>
+      <rect class="cls-2" x="264.24" y="394" width="130.41" height="30.12" transform="translate(738.51 79.61) rotate(90)"/>
+    </g>
+    <rect class="cls-2" x="233.77" y="394" width="4.94" height="30"/>
+  </g>
+</svg>
