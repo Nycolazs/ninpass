@@ -14,6 +14,42 @@ export const Container = styled.div`
   box-sizing: border-box;
 
   font-family: 'Poppins', sans-serif;
+  
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    top: 10vh;
+    
+
+  }
+  
+  .invisible{
+    top: -80vh !important;
+  }
+
+  .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 100vh;
+
+  }
+
+  .visible{
+    top: 6vh;
+  }
+
+  button{
+    position: absolute;
+    right: 0;
+  }
 `;
 
 export const LogoImage = styled.img`

@@ -33,7 +33,7 @@ export const LoginContainer = styled.div`
 
   .options{
     display: flex;
-    margin-top: 1.6vh;
+    margin-top: 0.4vh;
     flex-direction: row;
     width: 100%;
   }
@@ -107,5 +107,9 @@ export const LoginContainer = styled.div`
     font-size: 1.1vh;
     font-weight: 600 !important;
     margin-top: 1vh;
+  }
+
+  .mt1vh{
+    margin-top: 10vh;
   }
 `;

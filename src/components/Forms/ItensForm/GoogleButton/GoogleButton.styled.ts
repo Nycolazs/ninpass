@@ -31,4 +31,10 @@ export const Button = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  .icon{
+    transition: 0.3s;
+    margin-top: 0.3vh;
+    margin-right: 0.5vh;
+  }
 `;

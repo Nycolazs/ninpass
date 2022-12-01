@@ -1,5 +1,26 @@
 import styled from "styled-components";
 
+export const Body = styled.div`
+
+  .fill{
+    font-weight: 300;
+    font-size: 1.2vh;
+    color: #ff4d43;
+    margin:0px;
+    margin-left: 2vh;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  input.notFilled{
+    border: 0.1vh solid #ff4d43 !important;
+  }
+
+  p.notFilled{
+    opacity: 1 !important;
+  }
+`;
+
 export const InputWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -17,7 +38,6 @@ export const P = styled.div`
   color: #C1BDBD;
   font-weight: 600;
   font-size: 1.5vh;
-  margin-top: 1vh;
 `;
 
 export const Input = styled.input`
@@ -49,7 +69,6 @@ export const Icon = styled.p`
   position: absolute;
   font-size: 1.5vh;
   margin: 0px;
-  top: 54.2vh;
   right: 10vh;
   
   &:hover {

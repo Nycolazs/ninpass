@@ -5,7 +5,7 @@ export default function Login() {
   return (
     <>
       <Head>
-        <title>nintenPASS - Login</title>
+        <title>nintenPASS</title>
       </Head>
       <LoginBackground>
         <Forms/>
