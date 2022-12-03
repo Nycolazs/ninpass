@@ -7,7 +7,9 @@ import LoginButton from '../ItensForm/LoginButton/LoginButton';
 import GoogleButton from '../ItensForm/GoogleButton/GoogleButton';
 import Version from '../ItensForm/Version/Version';
 
-export default function LoginForm(){
+export default function LoginForm(props:any){
+  let { change, ...rest } = props;
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [remember, setRemember] = useState(false);
@@ -23,10 +25,6 @@ export default function LoginForm(){
 
   const forgotPassword = () => {
     console.log("forgot password");
-  }
-
-  const createAccount = () => {
-    console.log("create account");
   }
 
   const authGoogle = () => {
@@ -68,14 +66,14 @@ export default function LoginForm(){
       <LoginButton name="Entrar" onClick={login}/>
       <div className="createAccount">
         <p>Ainda não possui conta?</p>
-        <p className="red underline" onClick={createAccount}>Crie a sua</p>
+        <p className="red underline" onClick={change}>Crie a sua</p>
       </div>
       <div className="or">
         <hr className="hr1"/>
         <p>ou</p>
         <hr className="hr2"/>
       </div>
-      <GoogleButton onClick={authGoogle} />
+      <GoogleButton onClick={authGoogle} name="Entrar com o Google" />
       <p className="terms">Ao se inscrever no ninASS, você concorda com nossos Termos.</p>
       <div className="mt1vh">
         <Version />

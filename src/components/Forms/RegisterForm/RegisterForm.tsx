@@ -7,26 +7,23 @@ import RememberCheckbox from "../ItensForm/RememberCheckbox/RememberCheckbox";
 import Version from "../ItensForm/Version/Version";
 import { RegisterContainer } from "./RegisterForm.styled";
 
-export default function RegisterForm() {
+export default function RegisterForm(props: any) {
+  let { change, ...rest } = props;
+
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
-  const [remember, setRemember] = useState(false);
 
   const [nomeFilled, setNomeFilled] = useState(false);
   const [emailFilled, setEmailFilled] = useState(false);
   const [passFilled, setPassFilled] = useState(false);
   const [phoneFilled, setPhoneFilled] = useState(false); 
 
-  const login = () => {
+  const createAccount = () => {
     if(!verifyFields()){
       console.log("registrado")
     }
-  }
-
-  const createAccount = () => {
-    console.log("create account");
   }
 
   const authGoogle = () => {
@@ -77,12 +74,12 @@ export default function RegisterForm() {
       <Input getItem={setEmail} filled={emailFilled} name="Email" placeHolder="Digite seu e-mail" />
       <PasswordInput getItem={setPassword} filled={passFilled} name="Senha" />
       <Input getItem={setPhone} filled={phoneFilled} name="Telefone" placeHolder="Digite seu número de telefone" mask="(99) 99999-9999" />
-      <LoginButton name="Entrar" onClick={login}/>
-      <GoogleButton onClick={authGoogle} />
+      <LoginButton name="Criar conta" onClick={createAccount} />
+      <GoogleButton onClick={authGoogle} name="Criar com o Google" />
       <p className="terms">Ao se inscrever no ninASS, você concorda com nossos Termos.</p>
-      <div className="createAccount">
+      <div className="login">
         <p>Já possui uma conta?</p>
-        <p className="red underline" onClick={createAccount}>Entre</p>
+        <p className="red underline" onClick={change}>Faça o Login</p>
       </div>
       <div className="mt1vh">
         <Version />

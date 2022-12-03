@@ -50,7 +50,7 @@ export const RegisterContainer = styled.div`
     margin-right: 1vh;
   }
 
-  .createAccount{
+  .login{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -59,14 +59,16 @@ export const RegisterContainer = styled.div`
     margin-top: 1.6vh;
     color: #C1BDBD;
     font-size: 1.3vh;
-    font-weight: 600 !important;
+    font-weight: 300 !important;
     margin: 0px;
-    margin-top: 1vh;
+    top: 66vh;
+    left: 1vh;
 
     p{
       cursor: pointer;
       margin: 0px;
       margin-left: 0.5vh;
+      font-weight: 600 !important;
     }
   }
 

@@ -28,7 +28,7 @@ export default function PasswordInput(props:any){
             onChange={getItem}
             value={password || ""}
           />
-          <Icon onClick={ ()=>setShowPassword(!showPassword) }>
+          <Icon onClick={ ()=>setShowPassword(!showPassword)}>
             {showPassword ? eyeOff : eye}
             </Icon>
         </div>

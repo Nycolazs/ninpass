@@ -22,28 +22,37 @@ export const Container = styled.div`
     justify-content: center;
     
     position: absolute;
-    top: 10vh;
-    
+    top: 16vh;
+    left: 9vh;
 
+    opacity: 1;
+
+    transition: all 0.5s ease-in-out;
   }
   
   .invisible{
-    top: -80vh !important;
+    opacity: 0;
+    left: -38vh !important;
   }
-
+  
   .register {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    
     position: absolute;
-    top: 100vh;
+    top: 15vh;
+    left: -38vh;
 
+    opacity: 0;
+
+    transition: all 0.5s ease-in-out;
   }
 
   .visible{
-    top: 6vh;
+    opacity: 1;
+    left: 9vh !important;
   }
 
   button{
@@ -53,6 +62,9 @@ export const Container = styled.div`
 `;
 
 export const LogoImage = styled.img`
-  width: 21vh;
+  width: 22vh;
   height: 8vh;
+  position: absolute;
+  top: 10vh;
+  left: 16.5vh;
 `;

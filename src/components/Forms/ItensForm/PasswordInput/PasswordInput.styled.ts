@@ -69,7 +69,8 @@ export const Icon = styled.p`
   position: absolute;
   font-size: 1.5vh;
   margin: 0px;
-  right: 10vh;
+  right: 1vh;
+  margin-top: 1.4vh;
   
   &:hover {
     cursor: pointer;

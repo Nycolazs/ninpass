@@ -12,11 +12,11 @@ export const Button = styled.div`
   font-weight: 600;
   height: 40px;
   margin: 0 auto;
-  margin-top: 1.6vh;
   padding: 0 20px;
   text-align: center;
   width: 100%;
   height: 5vh;
+  margin-bottom: 1vh;
 
   &:hover {
     background-color: #ff4d43;

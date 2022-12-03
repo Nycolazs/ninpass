@@ -1,23 +1,21 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { Container, LogoImage } from "./Forms.styled";
 import LoginForm from "./LoginForm/LoginForm";
 import RegisterForm from "./RegisterForm/RegisterForm";
 
 export function Forms(){
-  const [ zelda, setZelda ] = useState(false);
+  const [ form, setForm ] = useState(false);
 
   return(
     <>
+      <LogoImage src="/images/ninPASS.png" />
       <Container>
-        <div className={zelda ? "login invisible" : "login"}>
-          <LogoImage src="/images/ninPASS.png" />
-          <LoginForm />
+        <div className={form ? "login invisible" : "login"}>
+          <LoginForm change={()=>setForm(!form)} />
         </div>
-        <div className={zelda ? "register" : "register visible"}>
-          <LogoImage src="/images/ninPASS.png" className=""/>
-          <RegisterForm />
+        <div className={form ? "register visible" : "register"}>
+          <RegisterForm change={()=>setForm(!form)} />
         </div>
-        <button onClick={()=>setZelda(!zelda)}>Zelda</button>
       </Container>
     </>
   );

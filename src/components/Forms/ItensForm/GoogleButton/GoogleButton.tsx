@@ -3,7 +3,7 @@ import { LogoGoogle } from "react-ionicons";
 import { useState } from 'react';
 
 export default function GoogleButton(props: any){
-  let { onClick, ...rest } = props;
+  let { onClick, name, ...rest } = props;
   const [ hover, setHover ] = useState(false);
 
   return (
@@ -19,7 +19,7 @@ export default function GoogleButton(props: any){
           height="2.5vh"
           width="2.5vh"
         />
-        <p>Entrar com Google</p>
+        <p>{name}</p>
       </div>
     </Button>
   );

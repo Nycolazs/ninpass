@@ -36,6 +36,7 @@ export const LoginContainer = styled.div`
     margin-top: 0.4vh;
     flex-direction: row;
     width: 100%;
+    margin-bottom: 1vh;
   }
 
   .forgotPassword{
